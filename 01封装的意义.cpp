@@ -1,12 +1,40 @@
 #include <iostream>
 using namespace std;
 
-// è®¾è®¡ä¸€ä¸ªåœ†ç±»ï¼Œæ±‚åœ†çš„å‘¨é•¿
-// åœ†å‘¨é•¿å…¬å¼ C=2Ï€r
+// Ô²ÖÜÂÊ
+const double PI = 3.14;
+
+// Éè¼ÆÒ»¸öÔ²Àà£¬ÇóÔ²µÄÖÜ³¤
+// Ô²ÖÜ³¤¹«Ê½ C=2¦Ğr
+class Circle
+{
+// ·ÃÎÊÈ¨ÏŞ
+// ¹«¹²È¨ÏŞ
+public:
+    // ÊôĞÔ
+    // °ë¾¶
+    int m_r;
+
+    // ĞĞÎª
+    // »ñÈ¡Ô²µÄÖÜ³¤
+    double calculateZC()
+    {
+        return 2 * PI * m_r;
+    }
+};
 
 int main()
 {
+    // Í¨¹ıÔ²Àà ´´½¨¾ßÌåµÄÔ²£¨¶ÔÏó£©
+    Circle c1;
+
+    // ¸øÔ²¶ÔÏóµÄÊôĞÔ½øĞĞ¸³Öµ
+    c1.m_r = 10;
+
+    // »ñÈ¡Ô²c1µÄÖÜ³¤
+    cout << "Ô²µÄÖÜ³¤Îª£º" << c1.calculateZC() << endl;
+
     system("pause");
-    
+
     return 0;
 }
